@@ -23,7 +23,7 @@ if (isset($_GET['code']))
     if (!isset($_SESSION['state'])) {
         die("Session was not set. Please try again");
     }
-    if ($_SESSION['state'] !== $_GET['state']) {
+    if ($_SESSION['state'] != $_GET['state']) {
         die("Session was not correct");
     }
 
